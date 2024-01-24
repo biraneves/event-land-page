@@ -16,7 +16,8 @@
 
         &__item {
             strong,
-            p {
+            p,
+            span {
                 color: vars.$paletteColor4;
                 white-space: nowrap;
             }
