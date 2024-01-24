@@ -6,6 +6,7 @@
     padding: fn.p2r(40px) 0;
     display: flex;
     justify-content: space-between;
+    align-items: start;
     gap: fn.p2r(40px);
 
     &__info {
@@ -27,5 +28,22 @@
 
     &--image-left {
         flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: vars.$bpTablet) {
+        gap: fn.p2r(20px);
+
+        &__image {
+            width: fn.p2r(240px);
+        }
+    }
+
+    @media screen and (max-width: vars.$bpMobile) {
+        flex-direction: column-reverse;
+        padding-bottom: 0;
+
+        &__image {
+            width: 100%;
+        }
     }
 }
