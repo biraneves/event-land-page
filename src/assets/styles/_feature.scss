@@ -1,0 +1,31 @@
+@use 'config/fn';
+@use 'config/mxn';
+@use 'config/vars';
+
+.feature {
+    padding: fn.p2r(40px) 0;
+    display: flex;
+    justify-content: space-between;
+    gap: fn.p2r(40px);
+
+    &__info {
+        &__title {
+            font-size: fn.p2r(32px);
+            margin-bottom: fn.p2r(20px);
+        }
+
+        &__text {
+            margin-bottom: fn.p2r(16px);
+            line-height: fn.p2r(22px);
+        }
+    }
+
+    &__image {
+        width: fn.p2r(320px);
+        border-radius: fn.p2r(8px);
+    }
+
+    &--image-left {
+        flex-direction: row-reverse;
+    }
+}

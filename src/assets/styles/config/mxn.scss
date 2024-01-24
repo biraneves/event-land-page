@@ -1,0 +1,9 @@
+@use 'fn';
+@use 'vars';
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    font-family: vars.$fontText;
+    color: vars.$colorText;
+}

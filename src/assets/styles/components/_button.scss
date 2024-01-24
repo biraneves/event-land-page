@@ -1,0 +1,26 @@
+@use '../config/fn';
+@use '../config/mxn';
+@use '../config/vars';
+
+.button {
+    padding: fn.p2r(8px);
+    border: none;
+    border-radius: fn.p2r(4px);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: none;
+    background-color: vars.$paletteColor2;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: lighten(vars.$paletteColor2, 5%);
+    }
+
+    @media screen and (max-width: vars.$bpMobile) {
+        padding: fn.p2r(12px);
+    }
+}
