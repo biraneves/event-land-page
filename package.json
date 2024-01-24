@@ -1,0 +1,15 @@
+{
+    "name": "event-land-page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel src/index.html src/assets/styles/main.css src/assets/scripts/main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel": "^2.11.0"
+    }
+}
